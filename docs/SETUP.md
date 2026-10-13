@@ -32,7 +32,9 @@ All test inputs are synthetic. The pinned PDF decoder is deliberate; see [ARCHIT
 
 Sites and its generated-plugin workflow are account-dependent. Read the [official plugin-hosting guide](https://help.openai.com/en/articles/20001547-hosting-a-plugin-with-chatgpt-sites). If the feature is unavailable, stop rather than improvising a local tunnel and calling it cloud hosting.
 
-Open the cloned folder in Codex with the Sites plugin available, then give it this instruction:
+For the complete agent-led workflow, copy [SETUP_PROMPT.md](SETUP_PROMPT.md) into your task. It covers deployment, mailbox relay, historical backfill, cloud scheduling and verification.
+
+Open the cloned folder in Codex with the Sites plugin available. For deployment alone, give it this shorter instruction:
 
 > Deploy the source in this folder as my own owner-private ChatGPT Site called Postscan. Use the Sites supported source and publication workflow. Do not reuse an existing project ID from another account. Preserve the R2 BUCKET binding and MCP capability. Configure OWNER_EMAIL using the exact authenticated account email that Sites sends. Keep runtime secrets outside source and Git. Build and run the synthetic tests, publish privately, install/connect the generated plugin, then test its native tools. Do not configure mail forwarding or schedules until I choose my source account.
 

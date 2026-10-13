@@ -34,7 +34,7 @@ The server is independent of your computer after deployment. Your connected Chat
 ## Start here
 
 1. Read the [platform and privacy requirements](docs/PRIVACY.md).
-2. Follow the [complete setup tutorial](docs/SETUP.md), including historical backfill.
+2. Copy the [setup prompt](docs/SETUP_PROMPT.md) into ChatGPT/Codex, and follow the [complete setup tutorial](docs/SETUP.md), including historical backfill.
 3. Use the [import task prompt](docs/IMPORT_PROMPT.md) and verify a cloud test, a timer-driven run and a genuinely new letter separately.
 4. See [architecture and tool reference](docs/ARCHITECTURE.md) for implementation details and limitations.
 
