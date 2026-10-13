@@ -1,0 +1,6 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {getResolvedPDFJS} from 'unpdf';import {rgba,readPdfPage} from '../src/pdf-page.js';
+test('pinned decoder retains JS JBIG2/CCITT path',async()=>{assert.equal((await getResolvedPDFJS()).version,'5.6.205');});
+test('packed monochrome pixels preserve row padding and polarity',()=>{const v=rgba({width:9,height:2,kind:1,data:new Uint8Array([0x80,0x80,0x40,0x00])});const pix=i=>v[i*4];assert.equal(pix(0),255);assert.equal(pix(1),0);assert.equal(pix(8),255);assert.equal(pix(9),0);assert.equal(pix(10),255);assert.equal(v[3],255);});
+test('PDF reader rejects arbitrary URLs, credentials and oversized images',async()=>{await assert.rejects(()=>readPdfPage('https://example.test/private.pdf',1),/source_url_not_allowed/);await assert.rejects(()=>readPdfPage('https://x:secret@sdmntprnortheu.oaiusercontent.com/files/abc/raw',1),/source_url_not_allowed/);assert.throws(()=>rgba({width:4001,height:4001,data:new Uint8Array(),kind:2}),/image_pixel_limit/);});
+
+test('transparent text layers are readable on white without discarding opaque colors',()=>{assert.deepEqual([...rgba({width:3,height:1,kind:3,data:new Uint8Array([255,255,255,0,0,0,0,255,0,0,0,128])})],[255,255,255,255,0,0,0,255,127,127,127,255]);});

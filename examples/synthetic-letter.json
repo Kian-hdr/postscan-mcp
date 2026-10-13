@@ -1,0 +1,15 @@
+{
+  "title": "Synthetic demonstration letter",
+  "received_at": "2026-10-13T10:00:00Z",
+  "source_message_id": "synthetic-message@example.test",
+  "mailbox": "synthetic-test",
+  "original_filename": "synthetic-demonstration.pdf",
+  "original_mime": "application/pdf",
+  "markdown": "# Synthetic demonstration letter\n\n## Page 1\n\nThis is a made-up letter for testing. No real postal delivery or personal information is represented.\n",
+  "page_count": 1,
+  "warnings": [
+    "Synthetic fixture, not a real letter."
+  ],
+  "status": "ready",
+  "review_reason": null
+}

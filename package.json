@@ -1,0 +1,22 @@
+{
+  "name": "postscan-mcp",
+  "version": "0.2.7",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/bundle.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check:public": "node scripts/check-public.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "unpdf": "1.7.0",
+    "upng-js": "2.1.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10",
+    "miniflare": "5.20260930.0-alpha"
+  },
+  "license": "MIT"
+}

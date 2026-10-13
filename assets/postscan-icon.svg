@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Postscan</title>
+  <desc id="desc">A black envelope inside scan corners on a postal-yellow tile. Independent community project.</desc>
+  <rect width="512" height="512" rx="104" fill="#FFCC00"/>
+  <g fill="none" stroke="#161616" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M144 112h-32v48M368 112h32v48M112 352v48h32M400 352v48h-32"/>
+  </g>
+  <rect x="144" y="184" width="224" height="152" rx="22" fill="#161616"/>
+  <path d="m164 207 79 59a22 22 0 0 0 26 0l79-59" fill="none" stroke="#FFCC00" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
