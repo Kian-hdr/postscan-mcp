@@ -6,6 +6,8 @@ Turn scanned postal letters into searchable, page-labelled Markdown for ChatGPT.
 
 **Independent community project.** This software is not made, endorsed or operated by Deutsche Post, WEB.DE, Google or OpenAI. Each user creates their own private deployment and connects their own mailbox. This repository contains source code and synthetic tests, not a running shared mail service.
 
+[Start here](#start-here) · [How it works](#how-it-works) · [Local verification](#local-verification)
+
 ## What is POSTSCAN?
 
 [POSTSCAN](https://www.deutschepost.de/de/p/postscan.html) is Deutsche Post’s service for eligible private customers at a verified German address. Deutsche Post opens eligible incoming letters, scans their contents and makes the scans available in its customer account. Optional WEB.DE or GMX delivery sends scan copies to your mailbox. Some mail types are excluded, so the service does not digitize every physical delivery.
