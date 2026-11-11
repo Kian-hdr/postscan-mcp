@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/postscan-icon.svg" width="96" alt="Postscan envelope and scanning icon"></p>
 
-# Postscan MCP
+<p align="center"><strong>Postscan MCP</strong></p>
 
 Turn scanned postal letters into searchable, page-labelled Markdown for ChatGPT. Keep the original PDFs in your mailbox and retrieve the saved text through a private, self-hosted MCP on ChatGPT Sites.
 
